@@ -5,7 +5,7 @@
 log-helper level eq trace && set -x
 
 # add image tools to path
-ln -sf ${CONTAINER_SERVICE_DIR}/slapd-backup/assets/tool/* /sbin/
+#ln -sf ${CONTAINER_SERVICE_DIR}/slapd-backup/assets/tool/* /sbin/
 
 # add cron jobs
 ln -sf ${CONTAINER_SERVICE_DIR}/slapd-backup/assets/cronjobs /etc/cron.d/slapd-backup

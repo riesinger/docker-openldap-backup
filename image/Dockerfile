@@ -20,5 +20,7 @@ RUN /container/tool/install-service
 # Add default env variables
 ADD environment /container/environment/98-default
 
+RUN ln -sf /container/service/slapd-backup/assets/tool/* /sbin/
+
 # Set backup data in a data volume
 VOLUME ["/data/backup"]
